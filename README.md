@@ -12,17 +12,17 @@
 	    //  exec sql query
 	}
 
-1 首先在redis中根据key=xxxoo:key查询，如果有值，根据key所对应的json数组生成Person对象，并返回
-2 执行查询语句   
-3 根据Person中的name，age字段生成json数组，并存到redis中
+1 首先在redis中根据key=xxxoo:key查询，如果有值，根据key所对应的json数组生成Person对象，并返回  
+2 执行查询语句     
+3 根据Person中的name，age字段生成json数组，并存到redis中  
 
 
 	@RedisCachePut(value="xxoo",key="#name",names= "name,age")
 		public int testPut(Person person) { 
 	    //  exec sql insert
 		}
-1 执行插入操作
-2 根据person中的name，age生成json数组，并根据key=xxoo:person.name存入数据库
+1 执行插入操作  
+2 根据person中的name，age生成json数组，并根据key=xxoo:person.name存入数据库  
 
 ## 三 如何引入
 直接引入即可，记得要扫描包哦
