@@ -1,4 +1,4 @@
-package cn.com.spdbccc.hotelbank.rediscache.util;
+package cn.com.earnfish.rediscache.util;
 
 import java.util.Date;
 
@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import cn.com.spdbccc.hotelbank.autoconfigure.amqp.RabbitSender;
-import cn.com.spdbccc.hotelbank.base.constant.MQConstants;
-import cn.com.spdbccc.hotelbank.base.vo.RabbitMetaMessage;
-import cn.com.spdbccc.hotelbank.rediscache.po.RedisLogPO;
-import cn.com.spdbccc.hotelbank.utils.Identity;
-import cn.com.spdbccc.hotelbank.utils.JacksonUtil;
+import cn.com.earnfish.autoconfigure.amqp.RabbitSender;
+import cn.com.earnfish.base.constant.MQConstants;
+import cn.com.earnfish.base.vo.RabbitMetaMessage;
+import cn.com.earnfish.rediscache.po.RedisLogPO;
+import cn.com.earnfish.utils.Identity;
+import cn.com.earnfish.utils.JacksonUtil;
 
 @Component
 public class RedisUtil {

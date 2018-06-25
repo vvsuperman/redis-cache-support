@@ -1,11 +1,11 @@
-package cn.com.spdbccc.hotelbank.rediscache.config;
+package cn.com.earnfish.rediscache.config;
 
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.SerializationException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import cn.com.spdbccc.hotelbank.utils.JacksonUtil;
+import cn.com.earnfish.utils.JacksonUtil;
 
 
 

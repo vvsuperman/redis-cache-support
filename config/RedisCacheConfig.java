@@ -1,4 +1,4 @@
-package cn.com.spdbccc.hotelbank.rediscache.config;
+package cn.com.earnfish.rediscache.config;
 
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;

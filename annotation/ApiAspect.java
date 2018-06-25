@@ -1,4 +1,4 @@
-package cn.com.spdbccc.hotelbank.rediscache.annotation;
+package cn.com.earnfish.rediscache.annotation;
 
   
 import java.lang.reflect.InvocationTargetException;
@@ -26,10 +26,10 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
 
-import cn.com.spdbccc.hotelbank.rediscache.annotation.RedisCacheAble;
-import cn.com.spdbccc.hotelbank.rediscache.config.RedisCacheConfig;
-import cn.com.spdbccc.hotelbank.rediscache.util.RedisUtil;
-import cn.com.spdbccc.hotelbank.utils.JacksonUtil;
+import cn.com.earnfish.rediscache.annotation.RedisCacheAble;
+import cn.com.earnfish.rediscache.config.RedisCacheConfig;
+import cn.com.earnfish.rediscache.util.RedisUtil;
+import cn.com.earnfish.utils.JacksonUtil;
 import redis.clients.jedis.Jedis;  
   
 
@@ -54,11 +54,11 @@ public class ApiAspect {
 	@Autowired
 	private RedisUtil redisUtil;
 	
-    @Pointcut("@annotation(cn.com.spdbccc.hotelbank.rediscache.annotation.RedisCachePut)")// 定义注解类型的切点，只要方法上有该注解，都会匹配  
+    @Pointcut("@annotation(cn.com.earnfish.rediscache.annotation.RedisCachePut)")// 定义注解类型的切点，只要方法上有该注解，都会匹配  
     public void annotationPut(){          
     }  
     
-    @Pointcut("@annotation(cn.com.spdbccc.hotelbank.rediscache.annotation.RedisCacheAble)")// 定义注解类型的切点，只要方法上有该注解，都会匹配  
+    @Pointcut("@annotation(cn.com.earnfish.rediscache.annotation.RedisCacheAble)")// 定义注解类型的切点，只要方法上有该注解，都会匹配  
     public void annotationAble(){        
     }       
     

@@ -1,4 +1,4 @@
-package cn.com.spdbccc.hotelbank.rediscache.annotation;
+package cn.com.earnfish.rediscache.annotation;
 
   
 import java.lang.annotation.Documented;  

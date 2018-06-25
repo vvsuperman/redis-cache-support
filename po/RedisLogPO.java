@@ -1,9 +1,9 @@
-package cn.com.spdbccc.hotelbank.rediscache.po;
+package cn.com.earnfish.rediscache.po;
 
 
 import java.util.Date;
 
-import cn.com.spdbccc.hotelbank.base.entity.BaseEntity;
+import cn.com.earnfish.base.entity.BaseEntity;
 
 
 /**
